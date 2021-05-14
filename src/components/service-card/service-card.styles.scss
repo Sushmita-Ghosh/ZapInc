@@ -1,0 +1,67 @@
+.card-container {
+  height: 300px;
+  width: 100%;
+  margin: 0 5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+
+  .content {
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+
+    .title {
+      color: #ffffff;
+      font-weight: 200;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+    }
+    .desc {
+      color: #aeaeae;
+      margin-top: 30px;
+      font-weight: 200;
+      font-size: 0.8rem;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 20px;
+    }
+  }
+
+  &:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+  }
+
+  .button-container {
+    margin: 50px 0;
+    align-self: center;
+
+    .btn {
+      background-color: #ebe1e1;
+      border: 2px solid #ddd;
+      color: #000;
+      padding: 10px 32px;
+      text-align: center;
+      font-family: "Dosis";
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      margin: 4px 2px;
+      transition: 0.5s;
+
+      &:hover {
+        border: 2px solid #ddd;
+        color: #ddd;
+        background-color: #000;
+      }
+    }
+  }
+}

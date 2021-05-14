@@ -1,0 +1,42 @@
+.header-container {
+  position: absolute;
+  width: 90vw;
+  height: 25vh;
+  margin: 0 50px;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    color: #ddd;
+    letter-spacing: 5px;
+
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .routes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .route {
+      padding-left: 50px;
+      color: #ddd;
+      letter-spacing: 2px;
+      font-size: 14px;
+      font-weight: 200;
+      transition: 0.3s;
+
+      &:hover {
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}

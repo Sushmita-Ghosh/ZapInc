@@ -1,0 +1,34 @@
+// #000000
+.services-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #000000;
+
+  .header {
+    width: 100%;
+    padding: 100px 200px;
+    color: #ffffff;
+    word-spacing: 2px;
+    letter-spacing: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 2px;
+      background: #ffffff;
+      left: 5%;
+      top: 50%;
+      position: absolute;
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+}

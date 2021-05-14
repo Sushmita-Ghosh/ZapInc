@@ -1,16 +1,17 @@
 .particle-container {
-  background-image: url("../../assests/bg1.jpg");
+  background-image: url("../../assests/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 
   .content {
     color: #ebe1e1;
     font-size: 50px;
     width: 100%;
     position: absolute;
-    top: 40%;
+    top: 45%;
     text-align: center;
   }
 }
