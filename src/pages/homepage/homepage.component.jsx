@@ -1,9 +1,10 @@
 import React from "react";
+import Particle from "../../components/particle/particle.component";
 
 import "./homepage.styles.scss";
 
 const HomePage = () => {
-  return <div className="service-container">Hellow</div>;
+  return <Particle />;
 };
 
 export default HomePage;
