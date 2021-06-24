@@ -30,6 +30,12 @@ class Services extends React.Component {
           heading: "SLA Tracker",
           description: "Track Your SLA's",
         },
+        {
+          id: 4,
+          iconName: image3,
+          heading: "Checkpoints",
+          description: "Track Your Checkpoints",
+        },
       ],
     };
   }
@@ -40,7 +46,7 @@ class Services extends React.Component {
     return (
       <div className="services-container">
         <div className="header">Services We Offer</div>
-        <div class="cards-container">
+        <div className="cards-container">
           {cards.map(({ id, ...otherProps }) => (
             <Card key={id} {...otherProps} />
           ))}

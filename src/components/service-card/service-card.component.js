@@ -4,7 +4,7 @@ import "./service-card.styles.scss";
 import Slide from "react-reveal/Slide";
 
 const Card = ({ iconName, heading, description }) => {
-  console.log(heading);
+  // console.log(heading);
   return (
     <Slide left>
       <div className="card-container">
@@ -15,9 +15,6 @@ const Card = ({ iconName, heading, description }) => {
           <h2 className="title">{heading}</h2>
           <p className="desc">{description}</p>
         </div>
-        {/* <div class="button-container">
-          <button class="btn">Navigate</button>
-        </div> */}
       </div>
     </Slide>
   );

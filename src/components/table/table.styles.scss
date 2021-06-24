@@ -1,0 +1,34 @@
+.customers {
+  border-collapse: collapse;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  tr {
+    .row-container {
+      width: 100%;
+      background-color: #000;
+      color: white;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: #ddd;
+        color: #000;
+      }
+
+      th {
+        border: 1px solid #ddd;
+        font-size: 0.9rem;
+        width: 400px;
+        height: 50px;
+        text-align: center;
+        padding: 20px;
+        text-align: center;
+        // background-color: #000;
+
+        transition: 0.3s;
+      }
+    }
+  }
+}

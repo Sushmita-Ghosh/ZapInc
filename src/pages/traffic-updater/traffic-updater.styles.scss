@@ -1,0 +1,76 @@
+.traffic-updater-container {
+  //height: 1200px;
+  width: 100%;
+  background-color: #070707;
+  // background-repeat: repeat;
+  // background-size: cover;
+  // background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+
+  h2 {
+    text-align: center;
+    color: #ddd;
+    padding: 0 0 5% 0;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    margin-top: 10rem;
+  }
+
+  .form {
+    background-color: #000;
+    // border-radius: 20px;
+    box-sizing: border-box;
+    height: 420px;
+    padding: 20px;
+    width: 320px;
+    border: 1px solid #ddd;
+  }
+
+  .input {
+    background-color: #0f1113;
+    // border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 13px;
+    height: 40px;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+    font-family: "Dosis";
+    letter-spacing: 0.2rem;
+    margin-top: 10px;
+  }
+
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  .input-container__title {
+    color: #eee;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .input option {
+    font-size: 16px;
+  }
+
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4.5rem;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.8);
+  }
+}

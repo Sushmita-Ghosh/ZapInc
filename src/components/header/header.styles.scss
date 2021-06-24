@@ -9,10 +9,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 
   .logo {
     color: #ddd;
     letter-spacing: 5px;
+    text-decoration: none;
 
     &:hover {
       color: #fff;
@@ -32,6 +34,7 @@
       font-size: 14px;
       font-weight: 200;
       transition: 0.3s;
+      text-decoration: none;
 
       &:hover {
         color: #fff;

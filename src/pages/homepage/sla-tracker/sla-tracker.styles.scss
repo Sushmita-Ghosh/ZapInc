@@ -1,0 +1,49 @@
+.sla-tracker {
+  height: 1200px;
+  width: 100%;
+  background-color: #070707;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    color: #ddd;
+    padding: 0 0 5% 0;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    margin-top: -17rem;
+  }
+}
+
+.sla_container {
+  border-collapse: collapse;
+  width: 80%;
+  // display: flex;
+  // // flex-direction: row;
+  // justify-content: center;
+
+  tr {
+    width: 100%;
+    .row-container {
+      background-color: #000;
+      color: white;
+      // width: 0px;
+      height: 50px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      font-size: 0.9rem;
+      text-align: center;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #ddd;
+        color: #000;
+      }
+    }
+  }
+}

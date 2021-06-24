@@ -1,7 +1,8 @@
 // #000000
 .services-container {
-  height: 100vh;
+  height: 180vh;
   width: 100%;
+  //min-width: 700px;
   background-color: #000000;
 
   .header {
@@ -30,5 +31,6 @@
     display: flex;
     flex-direction: row;
     margin: 20px;
+    flex-wrap: wrap;
   }
 }
