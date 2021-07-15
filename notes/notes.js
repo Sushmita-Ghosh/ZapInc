@@ -34,6 +34,18 @@ yarn add node-sass@4.14.1
 //https://www.youtube.com/watch?v=nV7Mf77GiOc
 //yarn add react-bootstrap bootstrap@4.6.0
 
+// handling multiple inputs
+//https://www.pluralsight.com/guides/handling-multiple-inputs-with-single-onchange-handler-react
 
+// handling form resets between changing tabs
+//https://stackoverflow.com/questions/43922508/clear-and-reset-form-input-fields
 
+// color-coordination
+// https://coolors.co/
 
+// Sending emails through react
+//https://www.youtube.com/watch?v=NgWGllOjkbs
+//https://www.youtube.com/watch?v=t1_kviNJsy4
+
+// Handling progress bar through svg
+// https://www.youtube.com/watch?v=t7eHSAXW718

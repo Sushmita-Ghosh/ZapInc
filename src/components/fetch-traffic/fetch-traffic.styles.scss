@@ -1,0 +1,65 @@
+.form1 {
+  background-color: #000;
+  // border-radius: 20px;
+  box-sizing: border-box;
+  height: 420px;
+  padding: 20px;
+  width: 320px;
+  border: 1px solid #ddd;
+}
+
+.input {
+  background-color: #0f1113;
+  // border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 13px;
+  height: 40px;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+  font-family: "Dosis";
+  letter-spacing: 0.2rem;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.input-container__title {
+  color: #eee;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+// .input-container__title::after {
+//   content: "";
+//   position: absolute;
+//   width: 50px;
+//   height: 2px;
+//   background-color: #ddd;
+//   top: 50%;
+//   margin-left: 10px;
+// }
+.input option {
+  font-size: 16px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4.5rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
+}

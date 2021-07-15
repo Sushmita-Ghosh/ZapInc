@@ -11,13 +11,19 @@ const Header = () => {
 
       <div className="routes">
         <Link className="route" to="/JobsToTableCloner">
-          JOBS TO TABLE CLONER
+          CLONER
         </Link>
         <Link className="route" to="/TrafficUpdater">
           TRAFFIC UPDATER
         </Link>
         <Link className="route" to="/SlaTracker">
           SLA TRACKER
+        </Link>
+        <Link className="route" to="/checkpoints">
+          CHECKPOINTS
+        </Link>
+        <Link className="route" to="/live_tracker">
+          LIVE TRACKER
         </Link>
       </div>
     </div>

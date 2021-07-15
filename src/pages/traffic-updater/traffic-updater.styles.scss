@@ -16,61 +16,60 @@
     color: #ddd;
     padding: 0 0 5% 0;
     letter-spacing: 3px;
-    text-transform: capitalize;
-    margin-top: 10rem;
+    text-transform: uppercase;
+    margin-top: 12rem;
+    position: relative;
+    margin-bottom: 1rem;
   }
 
-  .form {
+  // // h2::after,
+  // h2::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 150px;
+  //   height: 3px;
+  //   background-color: #ddd;
+  //   top: 20%;
+  //   //margin-left: 20px;
+  // }
+
+  // h2::after {
+  // //   margin-left: 20px;
+  // // }
+
+  // h2::before {
+  //   margin-left: -170px;
+  // }
+
+  .box-controller {
     background-color: #000;
     // border-radius: 20px;
     box-sizing: border-box;
-    height: 420px;
-    padding: 20px;
-    width: 320px;
-    border: 1px solid #ddd;
-  }
-
-  .input {
-    background-color: #0f1113;
-    // border-radius: 12px;
-    border: 0;
-    box-sizing: border-box;
-    color: #eee;
-    font-size: 13px;
-    height: 40px;
-    outline: 0;
-    padding: 4px 20px 0;
-    width: 100%;
-    font-family: "Dosis";
-    letter-spacing: 0.2rem;
-    margin-top: 10px;
-  }
-
-  .input-container {
     height: 50px;
-    position: relative;
-    width: 100%;
-    margin: 50px 0;
-  }
-
-  .input-container__title {
-    color: #eee;
-    font-size: 13px;
-    font-weight: bold;
-  }
-  .input option {
-    font-size: 16px;
-  }
-
-  .button {
-    width: 100%;
+    width: 320px;
+    // border: 1px solid #ddd;
+    margin-bottom: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: -4.5rem;
-  }
+    cursor: pointer;
 
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(0.8);
+    .option {
+      color: #ddd;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .active {
+      background-color: #ddd;
+      border-bottom: none;
+      color: #000;
+    }
   }
 }

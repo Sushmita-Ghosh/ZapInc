@@ -26,26 +26,16 @@
       }
     }
   }
+}
 
-  //   .input {
-  //     background-color: #0f1113;
-  //     // border-radius: 12px;
-  //     border: 0;
-  //     box-sizing: border-box;
-  //     color: #eee;
-  //     font-size: 16px;
-  //     height: 40px;
-  //     outline: 0;
-  //     padding: 4px 20px 0;
-  //     width: 100%;
-  //     font-family: "Dosis";
-  //     letter-spacing: 0.2rem;
-  //   }
-
-  //   .input-container {
-  //     height: 50px;
-  //     position: relative;
-  //     width: 100%;
-  //     margin: 30px 0;
-  //   }
+.text-box {
+  margin-bottom: 20px;
+  width: 330px;
+  .text-box-content {
+    margin-bottom: 20px;
+    color: #ddd;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-style: italic;
+  }
 }

@@ -6,17 +6,16 @@ import Slide from "react-reveal/Slide";
 const Card = ({ iconName, heading, description }) => {
   // console.log(heading);
   return (
-    <Slide left>
-      <div className="card-container">
-        <div className="icon">
-          <img src={iconName} />
-        </div>
-        <div className="content">
-          <h2 className="title">{heading}</h2>
-          <p className="desc">{description}</p>
-        </div>
+    <div className="card-container">
+      <div className="icon">
+        <img src={iconName} />
       </div>
-    </Slide>
+      <div className="content">
+        <h2 className="title">{heading}</h2>
+        <p className="desc">{description}</p>
+      </div>
+    </div>
+    // </Slide>
   );
 };
 

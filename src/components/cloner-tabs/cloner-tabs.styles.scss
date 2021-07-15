@@ -1,0 +1,55 @@
+.cloner-tabs {
+  width: 800px;
+  background-color: #070707;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+
+  .box {
+    background-color: #000;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .options {
+      color: #ddd;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .is-active {
+      background-color: #ddd;
+      border-bottom: none;
+      color: #000;
+    }
+  }
+  .center {
+    text-align: center;
+
+    textarea {
+      margin-top: 50px;
+      outline: none;
+      background-color: black;
+      color: #ddd;
+      font-size: 0.9rem;
+      width: 800px;
+      height: 100%;
+      overflow-y: scroll;
+      font-family: "Dosis";
+      padding: 20px;
+    }
+  }
+}

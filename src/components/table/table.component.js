@@ -1,50 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./table.styles.scss";
+import ClonerTabs from "../cloner-tabs/cloner-tabs.component";
 
-const TableContainer = ({ jobDetails, headers }) => {
-  const headings = [];
-  const data = [];
-  let removed_space = jobDetails.split("\n");
-  removed_space.splice(0, 1);
-
-  function findCommonElement(removed_space, headers) {
+const TableContainer = ({ jobDetails, headers, setJobObject, jobObject }) => {
+  function buildJobObjectFromCawa(dataObj, removed_space, headers) {
     for (let i = 0; i < removed_space.length; i++) {
       for (let j = 0; j < headers.length; j++) {
         if (removed_space[i].includes(headers[j])) {
-          const data = [
-            headers[j],
-            removed_space[i].slice(headers[j].length + 1, -1),
-          ];
-
-          headings.push(data);
+          dataObj = {
+            ...dataObj,
+            [headers[j]]: removed_space[i].slice(headers[j].length + 1, -2),
+          };
         }
       }
     }
-    // Return if no common element exist
-    return false;
+    return dataObj ? dataObj : false;
   }
 
-  findCommonElement(removed_space, headers);
-
-  console.log("Headers", headings);
-  // console.log("Data", data);
+  useEffect(() => {
+    let dataObj = {};
+    let removed_space = jobDetails.split("\n");
+    removed_space.splice(0, 1);
+    let data = buildJobObjectFromCawa(dataObj, removed_space, headers);
+    setJobObject(data);
+  }, [setJobObject, jobDetails, headers]);
 
   return (
-    <table className="customers">
-      <thead>
-        <tr>
-          {headings.map((ele, index) => {
-            return (
-              <div key={index} className="row-container">
-                <th>{ele[0]}</th>
-                <th>{ele[1]}</th>
-              </div>
-            );
-          })}
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <>
+      <table className="customers">
+        <thead>
+          <tr>
+            {Object.keys(jobObject).map((ele, index) => {
+              return (
+                <div key={index} className="row-container">
+                  <th>{ele}</th>
+                  <th>{jobObject[ele]}</th>
+                </div>
+              );
+            })}
+          </tr>
+        </thead>
+      </table>
+    </>
   );
 };
 

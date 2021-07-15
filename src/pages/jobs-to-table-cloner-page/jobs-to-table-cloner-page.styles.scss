@@ -16,21 +16,24 @@
     color: #ddd;
     padding-top: 15%;
     letter-spacing: 3px;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
   .table-container {
     width: 100%;
-    padding-bottom: 20%;
     margin-top: 100px;
-  }
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  textarea {
-    margin-top: 50px;
-    outline: none;
-    background-color: black;
-    color: #ddd;
-    font-size: 1rem;
+    textarea {
+      margin-top: -5px;
+      outline: none;
+      background-color: black;
+      color: #ddd;
+      font-size: 1rem;
+    }
   }
 
   // .button-container {
